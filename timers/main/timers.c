@@ -56,9 +56,9 @@ void task_three(void *data)
 void app_main(void)
 {
     
-    xTaskCreate(task_one, "tsk_1", 2048, NULL, 1, &one_handle);
-    xTaskCreate(task_two, "tsk_2", 2028, NULL, 2, &two_handle);
-    xTaskCreate(task_three, "tsk_3", 2028, NULL, 3, &three_handle);
+    xTaskCreate(task_one, "tsk_1", 2048, NULL, 5, &one_handle);
+    xTaskCreate(task_two, "tsk_2", 2028, NULL, 6, &two_handle);
+    xTaskCreate(task_three, "tsk_3", 2028, NULL, 7, &three_handle);
     while (1) 
     {
         vTaskDelay(5000 / portTICK_PERIOD_MS);
